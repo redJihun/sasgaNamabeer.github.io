@@ -11,7 +11,8 @@
 
 
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<style>
 
 	/* Style for our header texts
@@ -50,6 +51,7 @@
 		transform: translateY(-50%);
 		position: relative;
 	}
+    
 	#section2{
 		background-image: url(imgs/bg3.jpg);
 		padding: 6% 0 0 0;
@@ -60,6 +62,11 @@
 	}
 	#section3 h1{
 		color: #000;
+	}
+    #section4 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
 	}
 
 
@@ -89,13 +96,19 @@
 	<![endif]-->
 </head>
 <body>
-<ul id="menu">
-    <li data-menuanchor="firstPage"><a href="#firstPage">LikeLion X Chosun</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+<ul id="menu" style="text-align:center">
+    <li data-menuanchor="firstPage"><a href="#firstPage">Like Lion</a></li> 
+    <li data-menuanchor="secondPage"><a href="#secondPage">Curriculum</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Benefits</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Activity</a></li>
+    <li data-menuanchor="lastPage"><a href="#lastPage">Apply</a></li>
 </ul>
 
-
+<!-- 1. 연합동아리 멋쟁이사자처럼 소개
+2. 연관 커리큘럼
+3. 수료 후 특전
+4. 조대멋사 사진 + 약도 첨부
+5. 지원하기 -->
 
 <div id="fullpage">
 	<div class="section " id="section0"><h1>준비중 입니다.</h1></div>
@@ -103,17 +116,27 @@
 		<div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
 	</div>
 	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
-	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+    <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+    <div class="section" id="section4">
+        <h1>
+            <button type="button" class="btn btn-warning btn-lg">지원하기</button>
+        </h1>
+    </div>
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/fullpage.js"></script>
 <script type="text/javascript" src="js/examples.js"></script>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
         verticalCentered: false,
-        navigation: true
+        navigation: true,
+        lazyLoad: true
     });
 </script>
 </body>
