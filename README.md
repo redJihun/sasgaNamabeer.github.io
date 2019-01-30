@@ -1,2 +1,11 @@
-# sasgaNamabeer.github.io
-likelion chosun univ. page
+# CHOSUN X LIKELION 
+
+
+chosun.likelion.org
+
+
+
+
+bootstrap4
+fullpage.js
+fontawesome5
