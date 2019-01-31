@@ -7,6 +7,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     margin: 0;
 }
 a{
+	font-family: "Nanum Gothic", sans-serif;
 	text-decoration:none;
 }
 table {
@@ -235,7 +236,7 @@ p{
 
 /* Demos Menu
  * --------------------------------------- */
- #demosMenu{
+#demosMenu{
 	position:fixed;
 	bottom: 10px;
 	right:10px;
@@ -253,3 +254,77 @@ p{
 	right:110px;
 	z-index: 999;
  }
+
+
+ h1{
+	font-size: 5em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+	padding:0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+	background-size: cover;
+}
+.slide{
+	background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+	background-image: url(../imgs/bg1.jpg);
+}
+#section0 h1{
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+}
+#section1{
+	background-image: url(../imgs/bg2.png);
+}
+#section2{
+	background-image: url(../imgs/bg3.png);
+	padding: 6% 0 0 0;
+}
+#section3{
+	background-image: url(../imgs/bg4.png);
+	padding: 6% 0 0 0;
+}
+#section3 h1{
+	color: #000;
+}
+#section4 h1{
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+	background-image: url(../imgs/bg2.jpg);
+	padding: 6% 0 0 0;
+}
+#slide2{
+	background-image: url(../imgs/bg5.jpg);
+	padding: 6% 0 0 0;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
