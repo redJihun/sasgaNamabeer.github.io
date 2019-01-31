@@ -264,6 +264,22 @@ p{
 	padding:0;
 }
 
+/* .effect {
+    display: inline-block;
+    position: relative;
+}
+
+.effect:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(left, rgba(255, 255, 255, 0) 40%, rgb(0, 0, 0) 100%);
+} */
+
 /* Centered texts in each section
 * --------------------------------------- */
 .section{
@@ -305,15 +321,23 @@ p{
 	color: #000;
 }
 #section4{
-	background-image: url(../imgs/lion.jpg);
+	background: url(../imgs/lion.jpg), linear-gradient(to right, black, black);
 	/* background-size: auto; */
-	opacity: 0.9;
+	/* opacity: 0.9; */
+	/* background-size: 0 0;  image should not be drawn here */
+	/* width: 100%; */
+	/* height: 100%; */
+	/* position: fixed; or absolute for scrollable backgrounds   */
 }
+
+#section4::after{
+	filter: grayscale();
+}
+
 #section4 h1{
 	top: 50%;
 	transform: translateY(-50%);
 	position: relative;
-	
 }
 
 
