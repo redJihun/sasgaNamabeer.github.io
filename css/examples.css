@@ -304,10 +304,16 @@ p{
 #section3 h1{
 	color: #000;
 }
+#section4{
+	background-image: url(../imgs/lion.jpg);
+	/* background-size: auto; */
+	opacity: 0.9;
+}
 #section4 h1{
 	top: 50%;
 	transform: translateY(-50%);
 	position: relative;
+	
 }
 
 
