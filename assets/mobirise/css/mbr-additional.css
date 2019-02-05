@@ -42,6 +42,12 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-size: 1rem;
 }
+
+.display-typing{
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.5rem;
+}
+
 .display-logo{
   font-family: "Rubik", sans-serif;
   font-size: 3.2rem;
@@ -49,8 +55,17 @@ body {
 .display-subtitle{
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
-  
 }
+.display-bot{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.display-menu{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.3rem;
+}
+
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */
