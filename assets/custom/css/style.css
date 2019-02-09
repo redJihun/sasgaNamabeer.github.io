@@ -10,11 +10,8 @@ nav{
     /* width: 180px;
     /* height: 50px; */
     /* font-family: 'Nanum Gothic'; */
-    min-width: 100px;
+    min-width: 200px;
     color: black;
-    line-height: 40px;
     text-align: center;
     background: transparent;
-    border: solid 1px white;
-    border-radius: 12px;
 }
