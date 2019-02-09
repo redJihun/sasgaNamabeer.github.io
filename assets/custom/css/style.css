@@ -1,5 +1,6 @@
 nav{
     background-color: transparent;
+    /* height: 20vh; */
 }
 
 .footer-p{
@@ -14,4 +15,9 @@ nav{
     color: black;
     text-align: center;
     background: transparent;
+}
+
+.icon2{
+    width: 42px;
+    height: 42px;    
 }
