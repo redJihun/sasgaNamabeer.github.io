@@ -24,43 +24,17 @@
 
 
 
-
+    
 <section>
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto mx-auto" style="">
-                <li class="nav-item active">
-                    <a class="nav-link display-menu" href="#">
-                        <button class="menu-button">
-                        Home
-                    </button>
-                         <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link display-menu" href="#">
-                        <button class="menu-button">
-                        Benefits
-                    </button>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link display-menu" href="#">
-                    <button class="menu-button">
-                        Activity
-                    </button>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link display-menu" href="#">
-                        <button class="menu-button">
-                        Curriculum
-                    </button>
-                    </a>
-                </li>
-                </ul>
+        <nav class="navbar navbar-expand-sm fixed-top">
+                <a class="navbar-brand" href="#"><div class="display-typing" id="d-day" style="color: black;"></div></a>
+
+                <div class="ml-auto">
+                <a href="https://github.com/sasgaNamabeer/sasgaNamabeer.github.io" target="_blank" title="Github 접속하기"><img src="http://cdn.onlinewebfonts.com/svg/img_326384.png" id="demosMenu" width="40px" height="40px" alt=""></a>
+
+                <a href="https://www.facebook.com/likelionchosun/" target="_blank" title="페이스북 페이지"><img src="http://mblogthumb4.phinf.naver.net/20140122_187/psy0707_13903661103132GoiQ_PNG/FB-f-Logo__blue_1024.png?type=w2" id="demosMenu2" width="40px" height="40px" alt=""></a>
+
+                <a href="http://pf.kakao.com/_LBxdxij" target="_blank" title="카카오톡 플러스친구"><img src="http://www.tripmoa.com/img/login/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%A1%9C%EA%B3%A0.png" id="demosMenu3" width="42px" height="42px" alt=""></a>
             </div>
             </nav>
 
@@ -133,7 +107,7 @@
                 <h2 class="mbr-section-title align-center mbr-fonts-style mbr-bold display-subtitle">Web Programming, Web Design</h2>                    </h2>
             </div>
         </div>
-    </div>z
+    </div>
 </section>
 
 <section class="features19 cid-qIjES4e5vV" id="features19-5" data-sortbtn="btn-primary">
@@ -156,7 +130,7 @@
                                 Benefits #1
                         </div>
                     </div>
-                    <div class="card-box" ">
+                    <div class="card-box">
                         <h3 class="mbr-title mbr-fonts-style mbr-bold mbr-black display-5">
                             Programming & Design
                         </h3>
@@ -372,6 +346,26 @@
 <!-- 폰트어썸 -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
   <script>
+      var countDownDate = new Date("Mar 7, 2019 23:59:59").getTime(); //1초마다 갱신되도록 함수 생성,실행 
+      var x = setInterval(function() { // 오늘 날짜 등록 
+        var now = new Date().getTime(); // 종료일자에서 현재일자를 뺀 시간 
+        var distance = countDownDate - now; // 각 변수에 일, 시, 분, 초를 등록 
+        var d = Math.floor(distance / (1000 * 60 * 60 * 24)); 
+        var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+        var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+        var s = Math.floor((distance % (1000 * 60)) / 1000); //id가 d-day인 HTML코드에 내용 삽입 
+        // document.getElementById("d-day").innerHTML = "디데이까지 " + d +"일 " + h + "시간 " + m + "분 " + s + "초 남았습니다."; });
+        h = String(h);
+        m = String(m);
+        s = String(s);
+        if(h.length == 1)
+            h="0"+h;
+        if(m.length == 1)
+            m="0"+m;
+        if(s.length == 1)
+            s="0"+s;
+        document.getElementById("d-day").innerHTML = "D-" +d+" "+ h + ":" + m + ":" + s ; });
+        
         $(function(){
           $('.typing').unityping({
               string: ['비전공자도 괜찮을까?','가능합니다!', '멋쟁이사자처럼에 지금 지원하세요!'],
